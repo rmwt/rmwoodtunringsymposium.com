@@ -1,0 +1,99 @@
+
+body {
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  background-color: black;
+  color: silver;
+  font-family: Arial, Helvetica, sans-serif;
+  /*font-size: todo;*/
+}
+A {
+  text-decoration: none;
+  color: tan;
+}
+A:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+
+
+/* container */
+
+.headerimg {
+  display: table;
+}
+
+.leftnav {
+  float: left;
+  display: table;
+  width: 180px;
+  background-color: gray;
+  color: black;
+  text-align: left;
+  padding: 5px 5px 30px 5px;
+  margin-right: 10px;
+}
+
+/* main body */
+
+.mainbody {
+  display: table;
+  vertical-align: top;
+  text-align: center;
+  margin-right: 10px
+  width: 100%;
+}
+
+.mainbody ul {
+  text-align: left;
+}
+
+.presenter h2 {
+  /* presenter name */
+  font-size: largest;
+  font-weight: bold;
+}
+.presenter h3 {
+  /* session title */
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.presenter img {
+  width: 200px;
+}
+
+
+.vendor img {
+  width: 300px;
+}
+
+.lodging img {
+  width: 300px;
+}
+
+.lodging iframe {
+  display: block;
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+.attraction {
+  padding-top: 30px;
+  font-size: larger;
+}
+
+.hr {
+  border-top-style: solid;
+}
+
+.larger {
+  font-size: larger;
+}
+
+.note {
+  color: gold;
+}
