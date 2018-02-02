@@ -1,16 +1,14 @@
 #!/bin/sh
 
-rm -r out
-mkdir -p out
+cd "$( dirname "${BASH_SOURCE[0]}" )"
 
-#  TODO Fill in ##PAGE## in description meta and title
-
+rm ../*.html
 
 for body in *_body.html; do
 
   title=$(head -1 $body | sed -n -e 's/<!-- \(.*\) -->/\1/p')
 
-  file=out/${body%_body.html}.html
+  file=../${body%_body.html}.html
 
   sed -e "s/~~TITLE~~/$title/g" -e "/~~BODY~~/r $body" -e "/~~BODY~~/d" container.html > $file
 
