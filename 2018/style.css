@@ -1,4 +1,3 @@
-
 body {
   margin-left: 0px;
   margin-top: 0px;
@@ -42,8 +41,8 @@ A:hover {
   display: table;
   vertical-align: top;
   text-align: center;
-  margin-right: 10px
-  width: 100%;
+  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .mainbody ul {
@@ -84,6 +83,18 @@ A:hover {
 .attraction {
   padding-top: 30px;
   font-size: larger;
+}
+
+
+.registration {
+  text-align: left;
+}
+
+.registration-category {
+  margin-left: 1em;
+}
+.registration-item {
+  margin-left: 3em;
 }
 
 .hr {
