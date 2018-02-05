@@ -1,7 +1,8 @@
 
-/* layout */
+/*layout */
 body {
   min-width: 480px;
+  max-width: 1024px;
 }
 #header {
 }
@@ -13,7 +14,7 @@ body {
   position: relative;
   float: left;
 }
-#center {
+#main {
   padding: 10px 20px;
   width: 100%;
 }
@@ -27,60 +28,105 @@ body {
   left: 0px;
 }
 
-/* styling */
-
+/* typography, style */
+html {
+  font-size: 62.5%;
+  font-family: serif;
+}
 body {
-  background-color: black;
-  color: silver;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.618;
+  color: black;
+  background-color: #f9f9f9;
 }
-A {
-  text-decoration: none;
-  color: tan;
+
+a {
+  color: black;
 }
-A:hover {
-  text-decoration: underline;
-  color: yellow;
+a:hover {
+  color: blue;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+h1{
+  font-size: 1.6em;
+}
+h2 {
+  font-size: 1.4em;
+}
+h3 {
+  font-size: 1.0em;
+}
+
+/* Nav */
 
 #left {
-  background-color: gray;
+  background-color: silver;
   color: black;
-  text-align: left;
+}
+#left ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-#center {
-  vertical-align: top;
-}
-
-#center ul {
-  text-align: left;
-}
-
-.presenter h2 {
-  /* presenter name */
-  font-size: largest;
+/* Home */
+.demonstrators {
+  border-top-style: groove;
+  border-bottom-style: groove;
   font-weight: bold;
-}
-.presenter h3 {
-  /* session title */
   font-size: larger;
-  font-weight: bold;
-  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+/* Presenters */
+
+.presenters ul {
+  list-style-type: none;
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  padding-bottom: 1em;
+}
+.presenter {
+  border-top-style: groove;
 }
 .presenter img {
-  width: 200px;
+  height: 200px;
 }
 
+.schedule {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.schedule img {
+  width: 800px;
+}
 
+.vendor {
+  border-top: groove;
+  padding-top: 20px;
+  text-align: center;
+}
 .vendor img {
   width: 300px;
 }
 
+.lodging {
+  border-bottom: groove;
+  text-align: center;
+}
 .lodging img {
   width: 300px;
 }
-
 .lodging iframe {
   display: block;
   width: 100%;
@@ -90,9 +136,13 @@ A:hover {
 
 .attraction {
   padding-top: 30px;
-  font-size: larger;
+  border-top: groove;
 }
-
+.attraction img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .registration {
   text-align: left;
@@ -100,19 +150,28 @@ A:hover {
 
 .registration-category {
   margin-left: 1em;
+  background-color: lightgrey;
+}
+.registration h2 {
+  border-top: groove;
+  padding-top: 30px;
+}
+.registration h3 {
+  text-align: left;
 }
 .registration-item {
   margin-left: 3em;
 }
 
-.hr {
-  border-top-style: solid;
-}
+/** Generic Styles */
 
-.larger {
-  font-size: larger;
+.centered {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .note {
-  color: gold;
+  color: #ca2a2a;
 }
