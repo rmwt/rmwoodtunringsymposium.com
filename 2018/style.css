@@ -20,7 +20,7 @@ body {
 }
 #left {
   width: 180px;
-  padding: 0 10px;
+  padding: 10px 10px 0;
   right: 240px;
   margin-left: -100%;
 }
@@ -37,14 +37,14 @@ body {
   font-size: 1.8rem;
   line-height: 1.618;
   color: black;
-  background-color: #f9f9f9;
+  background-color: #f0f0f0;
 }
 
 a {
   color: black;
 }
 a:hover {
-  color: blue;
+  color: #006496;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,9 +96,18 @@ h3 {
 }
 .presenter {
   border-top-style: groove;
+  clear: both;
 }
 .presenter img {
+  float: left;
+  padding-right: 10px;
   height: 200px;
+}
+.presenter h3 {
+  clear: both;
+}
+.presenter ul {
+  list-style-position: inside;
 }
 
 .schedule {
@@ -111,13 +120,22 @@ h3 {
   width: 800px;
 }
 
+.gallery .slides {
+  width: 600px;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .vendor {
   border-top: groove;
   padding-top: 20px;
   text-align: center;
 }
 .vendor img {
-  width: 300px;
+  max-width: 600px;
+  max-height: 200px;
 }
 
 .lodging {
