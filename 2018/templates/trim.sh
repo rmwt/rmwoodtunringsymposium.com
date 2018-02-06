@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd "$( dirname "${BASH_SOURCE[0]}" )/.."
 
 for ff in images/*; do
   f=$(basename "$ff")
