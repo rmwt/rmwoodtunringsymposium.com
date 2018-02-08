@@ -1,27 +1,26 @@
 for presenter, registration, verdorapp
   presenter_bodyx.html and presenter_body  with 'coming soon' vs buildable content
 
-just names in index and presenter now.  comment out presenters tab?
 
-  mv all from 2018 to /
-  rm 2016
-
-*.sh -> bin/
-
-  build.sh (presenters and container)
-    build presenters - not yet if ever
-    build container
 
   download.sh
-    pull just the goods from ftp, git diff
+    cd remote/ (is gitignored, is git)
+    git status isClean?
+    wget/ftp just the goods from ftp
+    git diff isClean? (else git diff & error)
 
   publish.sh
-    ftp just the goods
+    cd remote/
+    bin/download.sh check noError
+    copy from ..
+    ftp up
+    git add . ; git commit -m "$(date)"
 
 
-read up on paypal
+* read up on paypal
+  investigate making paypal text boxes (vendorapp) bigger
+  paypal cart in a frame?
 
-investigate making paypal text boxes (vendorapp) bigger
 
 Needs:
   registration info - prices, meals
@@ -29,13 +28,3 @@ Needs:
   vendor registration info
   vendor form pdf
   presenter list
-
-
-
-
-  not yet if ever
-    templates/demos
-      foreach href
-        cd #href dir
-        cp info.html into ~~body~~
-        cp images* to images/demo
