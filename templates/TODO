@@ -1,6 +1,13 @@
 for presenter, registration, verdorapp
   presenter_bodyx.html and presenter_body  with 'coming soon' vs buildable content
 
+
+Center the content when the browser is wide
+@media to shrink images, footer, etc for smaller devices.
+
+
+
+
 just names in index and presenter now.  comment out presenters tab?
 
   mv all from 2018 to /
