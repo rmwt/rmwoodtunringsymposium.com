@@ -15,3 +15,12 @@ for body in *_body.html; do
   sed -e "s/~~TITLE~~/$title/g" -e "s/~~FILE~~/$basefile/g" -e "/~~BODY~~/r $body" -e "/~~BODY~~/d" container.html > $file
 
 done
+
+cd ..
+
+for f in *.html; do
+  echo $f
+  tidy -e -q $f 2>&1 | grep -v 'x-name' | grep -v 'x-subj'
+done
+
+linklint -warn -error -xref -root . '/#'
