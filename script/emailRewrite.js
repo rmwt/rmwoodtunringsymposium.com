@@ -8,15 +8,14 @@ window.onload = function() {
   var i;
   for (i = 0; i < l.length; i++) {
     var a = rot13(l[i].firstChild.nodeValue);
-    var s = l[i].getAttribute('xSubj');
+    var s = l[i].getAttribute('x-subj');
     var ss = '';
     if (s) ss = '?subject=' + s;
-    var n = l[i].getAttribute('xName');
-    var nn = '';
-    if (n) nn = '<'+n+'>'
+    var n = l[i].getAttribute('x-name');
+    var nn = a;
+    if (n) nn = '"'+n+'"<'+a+'>'
     var mt = rot13("znvygb:");
-    l[i].setAttribute("href", mt+nn+a+ss);
-    // element.setAttribute("onclick", a);
+    l[i].setAttribute("href", mt+nn+ss);
     l[i].firstChild.nodeValue = a;
   }
 };
