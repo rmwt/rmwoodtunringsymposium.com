@@ -1,7 +1,8 @@
 for presenter, registration, verdorapp
   presenter_bodyx.html and presenter_body  with 'coming soon' vs buildable content
 
-
+Center the content when the browser is wide
+@media to shrink images, footer, etc for smaller devices.
 
   download.sh
     cd remote/ (is gitignored, is git)

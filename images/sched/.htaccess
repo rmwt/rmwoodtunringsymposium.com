@@ -1,0 +1,4 @@
+<IfModule mod_headers.c>
+  # schedules - 1 day
+  Header set Cache-Control "max-age=86400, must-revalidate"
+</IfModule>
