@@ -7,7 +7,7 @@ Center the content when the browser is wide
   download.sh
     cd remote/ (is gitignored, is git)
     git status isClean?
-    wget/ftp just the goods from ftp
+    wget/ftp just the current goods from ftp
     git diff isClean? (else git diff & error)
 
   publish.sh
@@ -25,7 +25,7 @@ Center the content when the browser is wide
 
 Needs:
   registration info - prices, meals
-  registration form pdf
+  registration form pdf -> I make this
   vendor registration info
-  vendor form pdf
-  presenter list
+  vendor form pdf -> I make this
+  presenter list - Camille
