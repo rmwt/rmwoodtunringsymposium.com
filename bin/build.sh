@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 cd "$( dirname "${BASH_SOURCE[0]}" )/.."
 
@@ -19,13 +19,15 @@ done
 
 cd ..
 
-echo ==========================
-
-for f in *.html; do
-  echo $f
-  tidy -e -q $f
-done
-
-echo ==========================
+echo linklint:
 
 linklint -warn -error -xref -root . '/#'
+
+echo tidy:
+
+for f in *.html; do
+  tdy="$(tidy -e -q $f 2>&1 | grep -v 'proprietary attribute "x-')"
+  if [ -n "${tdy}" ]; then
+    echo "$f: <${tdy}>"
+  fi
+done

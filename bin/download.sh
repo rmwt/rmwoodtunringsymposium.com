@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash -e
 
 cd "$( dirname "${BASH_SOURCE[0]}" )/../remote"
 
@@ -41,10 +41,10 @@ for d in $dirs; do
 
   pushd .${d}
     # keep only things with a .*
-    files="$(curl -n -l ${site}${d} | awk 'BEGIN {ORS=","} /.*\.[^.].+/ {print}')"
+    files="$(curl --fail-early -n -l ${site}${d} | awk 'BEGIN {ORS=","} /.*\.[^.].+/ {print}')"
 
     if [ -n "${files}" ]; then
-      curl -n -O "${site}${d}{${files%,}}"
+      curl --fail-early -n -O "${site}${d}{${files%,}}"
     fi
   popd
 
