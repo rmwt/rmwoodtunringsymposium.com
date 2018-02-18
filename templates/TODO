@@ -1,22 +1,9 @@
-for presenter, registration, verdorapp
-  presenter_bodyx.html and presenter_body  with 'coming soon' vs buildable content
+presenter info
 
-Center the content when the browser is wide
-@media to shrink images, footer, etc for smaller devices.
+off-site hrefs target
 
-  download.sh
-    cd remote/ (is gitignored, is git)
-    git status isClean?
-    wget/ftp just the current goods from ftp
-    git diff isClean? (else git diff & error)
 
-  publish.sh
-    cd remote/
-    bin/download.sh check noError
-    copy from ..
-    ftp up
-    git add . ; git commit -m "$(date)"
-
+@media to shrink images, footer, etc for smaller devices. ?
 
 * read up on paypal
   investigate making paypal text boxes (vendorapp) bigger

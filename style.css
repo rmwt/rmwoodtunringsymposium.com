@@ -115,6 +115,7 @@ h3 {
 /* Presenters */
 
 .presenters ul {
+  font-size: 1.5em;
   list-style-type: none;
   columns: 3;
   -webkit-columns: 3;
@@ -128,9 +129,12 @@ h3 {
 }
 
 .presenter img {
+  height: 200px;
+}
+
+.presenter p img {
   float: left;
   padding-right: 10px;
-  height: 200px;
 }
 
 .presenter h3 {
@@ -139,6 +143,16 @@ h3 {
 
 .presenter ul {
   list-style-position: inside;
+}
+
+.coming-soon {
+  color: #ca2a2a;
+  font-size: 1.2em;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em 0;
 }
 
 .schedule {
@@ -152,7 +166,7 @@ h3 {
   width: 800px;
 }
 
-.gallery .slides {
+.gallery .slideshow {
   width: 600px;
   height: 400px;
   display: block;
