@@ -161,6 +161,7 @@ h3 {
 .coming-soon {
   color: #ca2a2a;
   font-size: 1.2em;
+  clear: both;
   text-align: center;
   display: block;
   margin-left: auto;
