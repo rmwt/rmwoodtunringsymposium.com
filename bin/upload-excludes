@@ -1,0 +1,7 @@
+2016rmwsymposium/*
+archives/*
+bin/*
+templates/*
+.git/*
+.gitignore
+.DS_Store

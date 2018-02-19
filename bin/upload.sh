@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+cd "$( dirname "${BASH_SOURCE[0]}" )/.."
+
 while [ $# != 0 ]; do
   case "$1" in
     --stage)
@@ -20,6 +22,13 @@ if [ -z "${site}" ]; then
   exit 1
 fi
 
-rm -rf /tmp/linklint
-linklint -doc /tmp/linklint -http -host ${site} ${dir}@
-open /tmp/linklint/index.html
+lftp <<EOF
+set cmd:fail-exit yes
+set ftp:list-options -a
+set ssl:verify-certificate no
+
+open ${site}
+cd ${dir}
+
+mirror --reverse --verbose --delete --use-cache --parallel=2 --exclude-glob-from=bin/upload-excludes
+EOF
