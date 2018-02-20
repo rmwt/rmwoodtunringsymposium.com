@@ -4,11 +4,11 @@ while [ $# != 0 ]; do
   case "$1" in
     --stage)
       site='srednal.com'
-      dir='/rmwts2018'
+      dir='/rmwts2018/'
       shift
       ;;
     --live)
-      site='rmwoodturningsymposium.'
+      site='rmwoodturningsymposium.com'
       dir='/'
       shift
       ;;
