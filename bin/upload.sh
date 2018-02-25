@@ -10,7 +10,7 @@ while [ $# != 0 ]; do
       shift
       ;;
     --live)
-      site='rmwoodturningsymposium.'
+      site='rmwoodturningsymposium.com'
       dir='/'
       shift
       ;;
