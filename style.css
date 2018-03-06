@@ -43,6 +43,10 @@ h3 {
   width: 100%;
 }
 
+#nav {
+  border-bottom: 1px solid;
+}
+
 #nav ul {
   list-style: none;
   padding: 0;
@@ -69,10 +73,6 @@ h3 {
 #nav .nav-selected {
   padding-bottom: 6px;
   background: #f0f0f0;
-}
-
-#nav {
-  border-bottom: 1px solid;
 }
 
 #footer {
@@ -158,14 +158,16 @@ h3 {
   clear: both;
 }
 
-
 .vendor {
   border-top-style: groove;
   clear: both;
+  padding-top: 20px;
+  text-align: center;
 }
 
 .vendor img {
-  height: 150px;
+  max-width: 600px;
+  max-height: 150px;
 }
 
 .coming-soon {
@@ -202,17 +204,6 @@ h3 {
   margin-right: auto;
 }
 
-.vendor {
-  border-bottom-style: groove;
-  padding-top: 20px;
-  text-align: center;
-}
-
-.vendor img {
-  max-width: 600px;
-  max-height: 200px;
-}
-
 .lodging {
   border-bottom-style: groove;
   text-align: center;
@@ -244,20 +235,26 @@ h3 {
   text-align: left;
 }
 
-.registration-category {
-  margin-left: 1em;
-  background-color: lightgrey;
-}
-
 .registration h2 {
   border-top-style: groove;
-  padding-top: 30px;
+  padding-top: 1em;
 }
 
 .registration h3 {
   text-align: left;
 }
 
+.registration-category {
+  padding-top: 0.1em;
+  padding-left: 1em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  background-color: lightgrey;
+}
+
 .registration-item {
-  margin-left: 3em;
+}
+
+.registration-checkout {
+  padding: 1em 0 0 5em;
 }
