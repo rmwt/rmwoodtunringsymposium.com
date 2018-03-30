@@ -158,6 +158,10 @@ h3 {
   clear: both;
 }
 
+.presenter li {
+  list-style-position: inside;
+}
+
 .vendor {
   border-top-style: groove;
   clear: both;
