@@ -200,6 +200,14 @@ h3 {
   width: 100%;
 }
 
+.schedule ul {
+  list-style-position: inside;
+  padding-bottom: 1em;
+}
+.schedule .note {
+  font-weight: bold;
+}
+
 .gallery .slideshow {
   width: 600px;
   height: 400px;
